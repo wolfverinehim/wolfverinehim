@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/naizen_logo.png') }}" alt="MariCoin Logo">
+        <h1>Donaciones</h1>
+        <button id="connect-wallet">Conectar Wallet</button>
+    </header>
+
+    <main>
+        <section class="donation-card">
+            <h2>MCOIN AYUDA PARA LOS AFECTADOS DE LA DANA</h2>
+            <p>Con el fin de generar una red de apoyo entre los afectados</p>
+            <p>Para más información, consulta el siguiente enlace: <a href="https://naizen.eus/">Afectados DANA</a></p>
+            <img src="{{ url_for('static', filename='images/qr_code.png') }}" alt="Código QR">
+            <div class="progress">
+                <label>PROGRESO</label>
+                <span id="progress-text">Cargando...</span> <!-- Valor inicial como "Cargando..." -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Utilizamos cookies para optimizar nuestro sitio web y nuestro servicio <a href="#">Leer más</a></p>
+        <button>Aceptar</button>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
+
