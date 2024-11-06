@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) throw new Error("Error al obtener el progreso de donaciones");
             
             const data = await response.json();
-            const progress = data.donation; // Supongamos que la API devuelve un campo 'donation'
+            const progress = data.current_donation; // Supongamos que la API devuelve un campo 'current_donation'
             const goal = data.goal; // Supongamos que la API devuelve un campo 'goal'
             progressText.textContent = `${progress} / ${goal}`;
         } catch (error) {
