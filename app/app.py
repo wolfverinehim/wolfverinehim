@@ -35,7 +35,7 @@ def get_token_price(symbol):
 # Endpoint para obtener el progreso de la donación
 @app.route('/donation/progress', methods=['GET'])
 def donation_progress():
-    wallet_address = "0x5F6bBd4C50ef1a90541a87737C06228F4541cF41"
+    wallet_address = "0x6c455601f9bd87cb892da76529f1a3a4f90362bd"
     total_value = 0
     
     # Obtener balances de Polygon y su valor en USD
