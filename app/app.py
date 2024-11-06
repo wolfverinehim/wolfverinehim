@@ -95,7 +95,7 @@ def index():
 # Ejecutar la aplicación según el entorno
 if __name__ == '__main__':
     if ENV_MODE == 'development':
-        app.run(debug=True, host='0.0.0.0', port=463)
+        app.run(debug=True, host='0.0.0.0', port=443)
     else:
         from waitress import serve
-        serve(app, host="0.0.0.0", port=463) 
+        serve(app, host="0.0.0.0", port=443) 
