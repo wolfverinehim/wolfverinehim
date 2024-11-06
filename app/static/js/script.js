@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
             const progress = data.current_donation; // Supongamos que la API devuelve un campo 'current_donation'
             const goal = data.goal; // Supongamos que la API devuelve un campo 'goal'
-            progressText.textContent = `${progress} / ${goal}`;
+            progressText.textContent = `$${progress} / $${goal}`;
         } catch (error) {
             console.error("Error al obtener el progreso de donaciones:", error);
         }

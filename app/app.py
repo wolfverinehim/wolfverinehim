@@ -77,7 +77,7 @@ def donation_progress():
         # Añadir el balance en USD al total
         total_value += balance_usd
 
-    goal = 444444  # Objetivo de donación en USD
+    goal = 50000  # Objetivo de donación en USD
 
     return jsonify({
         "current_donation": total_value,
